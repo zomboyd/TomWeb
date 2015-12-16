@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Exemple</title>
-    </head>
-    <body>
-        <%-- Ceci est un commentaire JSP, non visible dans la page HTML finale.  --%>
-        <!-- Ceci est un simple commentaire HTML. -->
-        <p>Ceci est un simple texte.</p>
-        <%@ page import="jswebModel.jswebModel" %>
-    </body>
-</html>
+<jsp:useBean id="jsweb" class="jsweb.jswebModel" scope="session" />
+<jsp:setProperty name="jsweb" property="setName" value="Toto" />
+
+<HTML>
+<BODY>
+Hello!  The time is now <%= new java.util.Date() %>
+
+<p>Student name is <jsp:getProperty name="jsweb" property="name"</p>
+</BODY>
+</HTML>
