@@ -1,17 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: alex
-  Date: 16/12/15
-  Time: 15:14
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="Date.DateDemo"%>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>This is the date example</title>
   </head>
   <body>
-  $END$
+  <% DateDemo demo = new DateDemo();
+  out.println("Current date : " + demo.returnDate();%>)
   </body>
->>>>>>> Stashed changes
 </html>
