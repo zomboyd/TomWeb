@@ -1,0 +1,9 @@
+package Date;
+import java.util.*;
+
+public class DateDemo {
+public Date returnDate() {
+Date d=new Date();
+return d;
+	}
+}
